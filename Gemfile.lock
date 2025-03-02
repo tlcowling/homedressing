@@ -314,6 +314,7 @@ PLATFORMS
   riscv64-linux-gnu
   riscv64-linux-musl
   ruby
+  ubuntu-unknown
   x86-linux
   x86-linux-gnu
   x86-linux-musl
