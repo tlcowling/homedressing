@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Welcome to Homedressing"
+title: "Homedressing"
 ---
 
 <div class="carousel-container">
@@ -18,7 +18,7 @@ title: "Welcome to Homedressing"
         K práci s prostorem přistupuji velice individuálně, ráda řeším zařizování na míru, aby Váš interiér vynikl co nejlépe.
     </p>
     <p>
-        Pro inspiraci shlédněte moje <a href="/gallery">portfolio</a>.
+        Pro inspiraci shlédněte moje <a href="/portfolio">portfolio</a>.
     </p>
 </div>
 
