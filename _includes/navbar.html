@@ -1,0 +1,6 @@
+<nav>
+    <a href="{{ '/' | relative_url }}" class="{% if page.url == '/' %}active{% endif %}">HOMEDRESSING</a>
+    <a href="{{ '/portfolio' | relative_url }}" class="{% if page.url contains '/portfolio' %}active{% endif %}">PORTFOLIO</a>
+    <a href="{{ '/contact' | relative_url }}" class="{% if page.url contains '/contact' %}active{% endif %}">KONTAKT</a>
+    <a href="{{ '/blog' | relative_url }}" class="{% if page.url contains '/blog' %}active{% endif %}">BLOG</a>
+</nav>

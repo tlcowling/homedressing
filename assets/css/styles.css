@@ -1,0 +1,359 @@
+@font-face {
+    font-family: 'DIN';
+    src: url('/assets/fonts/din-next-w02-light.woff2') format('woff2'),
+         url('/assets/fonts/din-next-w01-light.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'DIN', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background: #fff;
+}
+
+nav {
+    width: 900px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    font-size: 14px;
+    padding: 20px 0;
+    position: relative;
+    border-bottom: 2px solid #ddd;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+nav a.active, nav a:hover {
+    color: #b30045;
+}
+
+nav a::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: gray;
+    visibility: hidden;
+}
+
+nav a:hover::before, nav a.active::before {
+    visibility: visible;
+}
+
+.container {
+    max-width: 900px;
+    margin-top: 40px;
+}
+
+.carousel-container {
+    position: relative;
+    width: 350px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.carousel img {
+    width: 100%;
+    height: auto;
+    opacity: 0;
+    position: absolute;
+    transition: opacity 1s ease-in-out;
+    filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.2));
+    border-radius: 5px;
+}
+
+.carousel img.active {
+    opacity: 1;
+    position: relative;
+}
+
+.text-content {
+    margin-left: 40px;
+    max-width: 450px;
+    color: #333;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.text-content a {
+    color: #ff0077;
+    text-decoration: none;
+}
+.blog-container {
+    display: flex;
+    max-width: 1200px;
+    margin: 40px auto;
+    gap: 20px;
+}
+
+.blog-content {
+    flex: 3;
+}
+
+.blog-sidebar {
+    flex: 1;
+    padding: 20px;
+    border-left: 2px solid #ddd;
+}
+
+.blog-sidebar h2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.blog-sidebar hr {
+    border: 1px solid #ddd;
+    margin-bottom: 15px;
+}
+
+.blog-sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.blog-sidebar li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.sidebar-thumbnail {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.blog-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    border-bottom: 2px solid #ddd;
+}
+
+.blog-thumbnail img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.blog-text {
+    flex: 1;
+}
+
+.blog-item h2 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.blog-meta {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+.read-more {
+    color: #b30045;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+@font-face {
+    font-family: 'DIN';
+    src: url('/assets/fonts/din-next-w01-light.woff2') format('woff2'),
+         url('/assets/fonts/din-next-w02-light.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'DIN', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background: #fff;
+}
+
+nav {
+    width: 900px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    font-size: 14px;
+    padding: 20px 0;
+    position: relative;
+    border-bottom: 2px solid #ddd;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+nav a.active, nav a:hover {
+    color: #b30045;
+}
+
+nav a::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: gray;
+    visibility: hidden;
+}
+
+nav a:hover::before, nav a.active::before {
+    visibility: visible;
+}
+
+.container {
+    max-width: 900px;
+    margin-top: 40px;
+}
+
+.carousel-container {
+    position: relative;
+    width: 350px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.carousel img {
+    width: 100%;
+    height: auto;
+    opacity: 0;
+    position: absolute;
+    transition: opacity 1s ease-in-out;
+    filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.2));
+    border-radius: 5px;
+}
+
+.carousel img.active {
+    opacity: 1;
+    position: relative;
+}
+
+.text-content {
+    margin-left: 40px;
+    max-width: 450px;
+    color: #333;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.text-content a {
+    color: #ff0077;
+    text-decoration: none;
+}
+
+/* Contact Page Styles */
+.contact-container {
+    display: flex;
+    max-width: 900px;
+    margin: 40px auto;
+    gap: 40px;
+    align-items: center;
+}
+
+.contact-image img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info {
+    flex: 1;
+}
+
+.contact-info h1 {
+    font-size: 22px;
+    color: #003366;
+    margin-bottom: 10px;
+}
+
+.contact-info h2 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.contact-info p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.contact-info a {
+    color: #003366;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.contact-form textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+.contact-form button {
+    background-color: #b30045;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.contact-form button:hover {
+    background-color: #8a0034;
+}
+
