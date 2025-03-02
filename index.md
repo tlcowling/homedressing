@@ -7,10 +7,10 @@ title: "Homedressing"
     <div class="carousel-container">
         <div class="carousel">
             <a href="#" data-lightbox="home-gallery">
-                <img src="/assets/images/image1.png" alt="Home Design 1" class="active">
+                <img src="{{ '/assets/images/image1.png' | relative_url }}" alt="Home Design 1" class="active">
             </a>
             <a href="#" data-lightbox="home-gallery">
-                <img src="/assets/images/image2.png" alt="Home Design 2">
+                <img src="{{ '/assets/images/image2.png' | relative_url }}" alt="Home Design 2">
             </a>
         </div>
     </div>

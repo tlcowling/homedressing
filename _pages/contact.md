@@ -6,7 +6,7 @@ permalink: /contact/
 
 <div class="contact-container">
     <div class="contact-image">
-        <img src="/assets/images/m.jpg" alt="Maria Shatova">
+        <img src="{{ '/assets/images/m.jpg' | relative_url }}" alt="Maria Shatova">
     </div>
     <div class="contact-info">
         <h1>Kontaktujte</h1>
