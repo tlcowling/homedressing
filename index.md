@@ -6,10 +6,10 @@ title: "Homedressing"
 <div class="home-content">
     <div class="carousel-container">
         <div class="carousel">
-            <a href="#" data-lightbox="home-gallery">
+            <a href="#" class="lightbox-trigger">
                 <img src="{{ '/assets/images/image1.png' | relative_url }}" alt="Home Design 1" class="active">
             </a>
-            <a href="#" data-lightbox="home-gallery">
+            <a href="#" class="lightbox-trigger">
                 <img src="{{ '/assets/images/image2.png' | relative_url }}" alt="Home Design 2">
             </a>
         </div>
@@ -23,17 +23,32 @@ title: "Homedressing"
         <p><a href="/portfolio/">Pro inspiraci shlédněte moje portfolio.</a></p>
     </div>
 </div>
-
+<div id="lightbox">
+    <span class="close">&times;</span>
+    <img id="lightbox-img" src="" alt="">
+</div>
 <script>
-    let images = document.querySelectorAll('.carousel img');
-    let currentIndex = 0;
+    document.addEventListener("DOMContentLoaded", function () {
+        const lightbox = document.getElementById("lightbox");
+        const lightboxImg = document.getElementById("lightbox-img");
+        const closeBtn = document.querySelector(".close");
 
-    function showNextImage() {
-        images[currentIndex].classList.remove('active');
-        currentIndex = (currentIndex + 1) % images.length;
-        images[currentIndex].classList.add('active');
-    }
+        document.querySelectorAll(".lightbox-trigger img").forEach(img => {
+            img.addEventListener("click", function (event) {
+                event.preventDefault();
+                lightboxImg.src = this.src;
+                lightbox.classList.add("show");
+            });
+        });
 
-    setInterval(showNextImage, 4000);
+        closeBtn.addEventListener("click", function () {
+            lightbox.classList.remove("show");
+        });
+
+        lightbox.addEventListener("click", function (event) {
+            if (event.target === lightbox) {
+                lightbox.classList.remove("show");
+            }
+        });
+    });
 </script>
-
